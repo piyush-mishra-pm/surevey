@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Header from "./components/Header";
 import Home from "./components/Home";
 import ChooseSurvey from "./components/ChooseSurvey";
+import Survey from "./components/Survey";
 
 export default function App() {
 
@@ -16,6 +17,9 @@ export default function App() {
         <Switch>
           <Route path="/choose-survey">
             <ChooseSurvey />
+          </Route>
+          <Route path="/survey/:userType">
+            <Survey />
           </Route>
           <Route path="/">
             <Home />

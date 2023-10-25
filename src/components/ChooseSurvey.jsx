@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import * as CONSTANTS from '../CONSTANTS'
 
 function ChooseSurvey() {
     return (
@@ -8,25 +10,25 @@ function ChooseSurvey() {
                 <div className="item">
                     {/* <img className="ui avatar image" src="/images/avatar/small/helen.jpg" /> */}
                     <div className="content">
-                        <div className="header">RESI</div>
+                        <Link to={`/survey/${CONSTANTS.USER_TYPE_RESI}`} className="header">RESI</Link>
                     </div>
                 </div>
                 <div className="item">
                     {/* <img className="ui avatar image" src="/images/avatar/small/christian.jpg" /> */}
                     <div className="content">
-                        <div className="header">SMB</div>
+                        <Link to={`/survey/${CONSTANTS.USER_TYPE_SMB}`} className="header">SMB</Link>
                     </div>
                 </div>
                 <div className="item">
                     {/* <img className="ui avatar image" src="/images/avatar/small/daniel.jpg" /> */}
                     <div className="content">
-                        <div className="header">LMI</div>
+                        <Link to={`/survey/${CONSTANTS.USER_TYPE_LMI}`} className="header">LMI</Link>
                     </div>
                 </div>
                 <div className="item">
                     {/* <img className="ui avatar image" src="/images/avatar/small/daniel.jpg" /> */}
                     <div className="content">
-                        <div className="header">EV</div>
+                        <Link to={`/survey/${CONSTANTS.USER_TYPE_EV}`} className="header">EV</Link>
                     </div>
                 </div>
             </div>
