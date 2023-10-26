@@ -1,7 +1,26 @@
 import React from 'react'
+import { toast } from 'react-toastify';
 import { Canvas } from '@react-three/fiber'
 import { PresentationControls } from '@react-three/drei';
+
 import ModelLoader from './ModelLoader';
+
+function loadModels(sceneConfigs, key){{
+    if(!sceneConfigs || !sceneConfigs[key] || !Object.keys(sceneConfigs[key].length)){
+        toast.info('Nothing to load!');
+        return '';
+    }
+    
+    return sceneConfigs[key].map(
+        (baseObjConf,index) =>
+            <ModelLoader 
+                key={index} 
+                modelProps={baseObjConf} 
+                errorMsg={`${baseObjConf.MODEL_NAME} Model Path is null.`}
+                successMsg={`${baseObjConf.MODEL_NAME} Model Loaded!`} 
+            />
+    );
+}}
 
 function SceneLoader(props) {
 
@@ -14,14 +33,9 @@ function SceneLoader(props) {
                         <ambientLight />
                         <pointLight position={[10, 10, 10]} />
                         {/** Load Base Model */}
-                        <ModelLoader
-                            modelPath={props.sceneConfigs.BASE_MODEL_PATH}
-                            errorMsg={`${props.sceneConfigs.USER_TYPE} Base Model Path is null.`}
-                            successMsg={`${props.sceneConfigs.USER_TYPE} Base Model Loaded!`}
-                        />
-
+                        {loadModels(props.sceneConfigs,"SCENE_BASE_OBJECTS")}
                         {/** Load Scene Objects */}
-
+                        {loadModels(props.sceneConfigs, "SCENE_OBJECTS")}
                     </PresentationControls>
                 </Canvas>
             </div>
