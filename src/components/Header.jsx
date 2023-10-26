@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 
 function Header() {
     return (
-        <nav>
-            <Link to="/">Sure-vey</Link>
-            <Link to="/choose-survey">Choose-Survey</Link>
-        </nav>
+        <div className='ui top menu'>
+            <div className='item'>
+                Logo
+            </div>
+            <Link to="/" className='item'>Sure-vey</Link>
+            <Link to="/choose-survey" className='item'>Choose-Survey</Link>
+        </div>
     )
 }
 
