@@ -13,7 +13,7 @@ export const SCENE_CONFIGS = {
             {
                 APPLIANCE_ID: 'LANTERN',
                 ASSET_MODEL_PATH: '/heavy-assets/models/Lantern.glb',
-                POSITION: { X: 3, Y: 0, Z: 3 },
+                POSITION: { X: 3, Y: 0, Z: 4 },
                 ROTATION: { X: 0, Y: 0, Z: 0 },
                 SCALE: { X: 0, Y: 0, Z: 0 },
             },
