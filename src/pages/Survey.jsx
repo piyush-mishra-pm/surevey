@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 
-import SceneLoader from './SceneLoader';
+import SceneLoader from '../components/SceneLoader';
 import { SCENE_CONFIGS } from '../conf/SceneConfigs';
 
 function Survey() {

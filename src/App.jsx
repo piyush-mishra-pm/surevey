@@ -3,9 +3,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import Header from "./components/Header";
-import Home from "./components/Home";
-import ChooseSurvey from "./components/ChooseSurvey";
-import Survey from "./components/Survey";
+import Home from "./pages/Home";
+import ChooseSurvey from "./pages/ChooseSurvey";
+import Survey from "./pages/Survey";
 
 export default function App() {
 
