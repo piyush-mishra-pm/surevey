@@ -1,33 +1,26 @@
 import React from 'react'
-import { Canvas, useLoader } from '@react-three/fiber'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import { toast } from 'react-toastify';
-
-function ModelLoader(props) {
-    if (props.modelPath === null || props.modelPath === undefined) {
-        toast.error(props.errorMsg);
-        return null;
-    }
-
-    const gltf = useLoader(GLTFLoader, props.modelPath);
-    toast.info(props.successMsg);
-    return <primitive object={gltf.scene} />
-}
+import { Canvas } from '@react-three/fiber'
+import { PresentationControls } from '@react-three/drei';
+import ModelLoader from './ModelLoader';
 
 function SceneLoader(props) {
 
     return (
         <>
             <div>SceneLoader</div>
-            <Canvas>
-                <ambientLight />
-                <pointLight position={[10, 10, 10]} />
-                <ModelLoader
-                    modelPath={props.sceneConfigs.BASE_MODEL_PATH}
-                    errorMsg={`${props.sceneConfigs.USER_TYPE} Base Model Path is null.`}
-                    successMsg={`${props.sceneConfigs.USER_TYPE} Base Model Loaded!`}
-                />
-            </Canvas>,
+            <div style={{ "width": "100%", "height": "80%" }}>
+                <Canvas>
+                    <PresentationControls snap global zoom={0.8} rotation={[Math.PI / 4, -Math.PI / 4, 0]} polar={[0, Math.PI / 4]} azimuth={[-Math.PI / 4, Math.PI / 4]}>
+                        <ambientLight />
+                        <pointLight position={[10, 10, 10]} />
+                        <ModelLoader
+                            modelPath={props.sceneConfigs.BASE_MODEL_PATH}
+                            errorMsg={`${props.sceneConfigs.USER_TYPE} Base Model Path is null.`}
+                            successMsg={`${props.sceneConfigs.USER_TYPE} Base Model Loaded!`}
+                        />
+                    </PresentationControls>
+                </Canvas>
+            </div>
         </>
     )
 }
