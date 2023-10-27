@@ -16,3 +16,4 @@ export default function ModelLoader(props) {
 
      return <primitive object={gltf.scene} position={initialPosition} rotation={initialRotation} scale={initialScale} />
 }
+/* comment */
