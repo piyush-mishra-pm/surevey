@@ -1,24 +1,52 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { toast } from 'react-toastify';
 import { Canvas } from '@react-three/fiber'
 import { PresentationControls } from '@react-three/drei';
+import _ from 'lodash';
 
 import ModelLoader from './ModelLoader';
+import * as CONSTANTS from '../CONSTANTS';
 
 function loadModels(sceneConfigs, key){{
     if(!sceneConfigs || !sceneConfigs[key] || !Object.keys(sceneConfigs[key].length)){
         toast.info('Nothing to load!');
         return '';
     }
+
+    const [selectedMesh, setSelectedMesh] = useState(-1);
+
+    function onClickCollectionItem(e,index){
+        e.stopPropagation();
+        console.log('Clicked Collection Item: ' + index + ' ' + sceneConfigs[key][index]['MODEL_NAME']);
+        setSelectedMesh(index);
+    }
     
     return sceneConfigs[key].map(
-        (baseObjConf,index) =>
-            <ModelLoader 
+        (baseObjConf,index) =>{
+
+            const initialPosition = baseObjConf.POSITION && baseObjConf.POSITION.length ? baseObjConf.POSITION : [0, 0, 0];
+            const initialRotation = baseObjConf.ROTATION && baseObjConf.ROTATION.length ? baseObjConf.ROTATION : [0, 0, 0];
+            let initialScale = _.cloneDeep(baseObjConf.SCALE && baseObjConf.SCALE.length ? baseObjConf.SCALE : [1, 1, 1]);
+
+            if (selectedMesh === index && key === CONSTANTS.SCENE_OBJECTS) {
+                // Should only alter scale of scene objects (Appliances, not the base props) items on Click.
+                initialScale = initialScale.map(s => CONSTANTS.ON_SELECT_SCALE * s);
+            }
+
+            return <ModelLoader 
                 key={index} 
+
+                position={initialPosition}
+                rotation={initialRotation}
+                scale={initialScale}
+                
                 modelProps={baseObjConf} 
+                onClickEvent={(e) => onClickCollectionItem(e, index)}
+                
                 errorMsg={`${baseObjConf.MODEL_NAME} Model Path is null.`}
                 successMsg={`${baseObjConf.MODEL_NAME} Model Loaded!`} 
             />
+        }
     );
 }}
 
@@ -33,9 +61,9 @@ function SceneLoader(props) {
                         <ambientLight />
                         <pointLight position={[10, 10, 10]} />
                         {/** Load Base Model */}
-                        {loadModels(props.sceneConfigs,"SCENE_BASE_OBJECTS")}
+                        {loadModels(props.sceneConfigs, CONSTANTS.SCENE_BASE_OBJECTS)}
                         {/** Load Scene Objects */}
-                        {loadModels(props.sceneConfigs, "SCENE_OBJECTS")}
+                        {loadModels(props.sceneConfigs, CONSTANTS.SCENE_OBJECTS)}
                     </PresentationControls>
                 </Canvas>
             </div>
