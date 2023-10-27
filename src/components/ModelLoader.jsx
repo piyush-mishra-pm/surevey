@@ -1,7 +1,5 @@
 import { toast } from 'react-toastify';
 import { useGLTF } from '@react-three/drei';
-import { useRef } from 'react';
-import * as CONSTANTS from '../CONSTANTS';
 
 export default function ModelLoader(props) {
     if (!props.modelProps || !props.modelProps.MODEL_PATH) {
