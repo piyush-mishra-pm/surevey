@@ -7,3 +7,7 @@ export const ON_SELECT_SCALE = 1.2;
 
 export const SCENE_OBJECTS = "SCENE_OBJECTS";
 export const SCENE_BASE_OBJECTS = "SCENE_BASE_OBJECTS";
+
+export const STATE_ANSWERED = "ANSWERED";
+
+export const APP_GROUP_SOLAR="SOLAR";

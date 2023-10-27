@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 
 import SceneLoader from '../components/SceneLoader';
 import { SCENE_CONFIGS } from '../conf/SceneConfigs';
+import SurveyQuestionArea from '../components/SurveyQuestionArea';
 
 function Survey() {
     let { userType } = useParams();
@@ -22,7 +23,7 @@ function Survey() {
                 </div>
                 <div style={{ flexGrow: 1, "background": "blue", "padding": "1rem" }}>
                     Survey Question Area
-
+                    <SurveyQuestionArea/>
                 </div>
             </div>
         </>
