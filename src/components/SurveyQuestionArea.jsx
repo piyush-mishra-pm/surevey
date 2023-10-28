@@ -27,7 +27,7 @@ function SurveyQuestionArea() {
       <div className="ui horizontal relaxed list" key={i}>
         <div className="item" style={{ margin: '.3rem' }}>
           <div className="content">
-            <a className="ui label" onClick={()=>selectAppliance(appGroup)}>
+            <a className={`ui ${selectedAppliance===appGroup?'blue':''} label`} onClick={()=>selectAppliance(appGroup)}>
               <img className="ui right spaced avatar image" src={CONSTANTS.APP_GROUPS_IMAGES[appGroup]} />
               {appGroup}
             </a>
