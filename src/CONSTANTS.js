@@ -52,3 +52,8 @@ export const ICON_OVERRIDE = {
   WOOD: "https://d13hc4rsp6iv99.cloudfront.net/dev/wood.png",
   SOLAR: "https://d13hc4rsp6iv99.cloudfront.net/dev/solar_icon.jpeg"
 }
+
+export const QUESTION_ANSWERED_STATES={
+  ANSWERED:"ANSWERED",
+  UNANSWERED:"UNANSWERED"
+};

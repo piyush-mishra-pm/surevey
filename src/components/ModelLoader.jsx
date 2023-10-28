@@ -11,26 +11,16 @@ export default function ModelLoader(props) {
     // toast.info(props.successMsg ? props.successMsg : 'Successfully loaded model');
 
     return <>
-        
-
-        return <primitive onClick={(e)=>props.onClickEvent(e)} object={gltf.scene} position={props.position} rotation={props.rotation} scale={props.scale}>
-            <Html position = {props.modelProps.TEXT_POSITION}
-            wrapperClass="label"
-            ><div>
-
-    
-    <div>
-      <span className="m_scroll_arrows unu"></span>
-      <span className="m_scroll_arrows doi"></span>
-      <span className="m_scroll_arrows trei"></span>
-    </div>
-</div>
-
-                </Html>
-
-
-
-                
-         </primitive>
+        <primitive onClick={(e) => props.onClickEvent(e)} object={gltf.scene} position={props.position} rotation={props.rotation} scale={props.scale}>
+            <Html position={props.modelProps.TEXT_POSITION} wrapperClass="label">
+                <div>
+                    <div>
+                        <span className="m_scroll_arrows unu"></span>
+                        <span className="m_scroll_arrows doi"></span>
+                        <span className="m_scroll_arrows trei"></span>
+                    </div>
+                </div>
+            </Html>
+        </primitive>
     </>
 }
