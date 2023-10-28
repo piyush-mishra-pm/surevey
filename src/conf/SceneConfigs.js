@@ -28,7 +28,7 @@ export const SCENE_CONFIGS = {
         POSITION: [0, 0, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.6, 0.6, 0.6],
-        TEXT_POSITION: [3.5, 0, -2.5],
+        TEXT_POSITION: [0, 0, 0],
         COUNT: 1,
       },
       {
@@ -38,13 +38,23 @@ export const SCENE_CONFIGS = {
         POSITION: [0, 0, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.6, 0.6, 0.6],
-        TEXT_POSITION: [0, 0, 0],
+        TEXT_POSITION: [-10, -5, -5],
         COUNT: 1,
       },
       {
         MODEL_NAME: "HeatPump_Gas",
         APPLIANCE_ID: "HEATPUMP_GAS",
         MODEL_PATH: "/heavy-assets/models/HeatPump_Gas.glb",
+        POSITION: [0, 0, 0],
+        ROTATION: [0, 0, 0],
+        SCALE: [0.6, 0.6, 0.6],
+        TEXT_POSITION: [7, 0, 7],
+        COUNT: 1,
+      },
+      {
+        MODEL_NAME: "Horizon",
+        APPLIANCE_ID: "HORIZON",
+        MODEL_PATH: "/heavy-assets/models/Horizon.glb",
         POSITION: [0, 0, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.6, 0.6, 0.6],
@@ -58,7 +68,7 @@ export const SCENE_CONFIGS = {
         POSITION: [1.3, 0, 1],
         ROTATION: [0, 1.6, 0],
         SCALE: [0.2, 0.2, 0.2],
-        TEXT_POSITION: [0, 0, 0],
+        TEXT_POSITION: [7, -14, -2],
         COUNT: 1,
       },
       {
@@ -68,6 +78,7 @@ export const SCENE_CONFIGS = {
         POSITION: [-0.2, 0, -1],
         ROTATION: [0, 0, 0],
         SCALE: [0.6, 0.6, 0.6],
+        TEXT_POSITION: [-7, -7, 6],
       },
       {
         MODEL_NAME: "Refrigerator",
@@ -76,7 +87,7 @@ export const SCENE_CONFIGS = {
         POSITION: [0.3, 0, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.7, 0.7, 0.7],
-        TEXT_POSITION: [0, 0, 0],
+        TEXT_POSITION: [-3, 1, 1.20],
         COUNT: 1,
       },
       {
@@ -86,7 +97,7 @@ export const SCENE_CONFIGS = {
         POSITION: [0, 0.4, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.5, 0.5, 0.5],
-        TEXT_POSITION: [0, 0, 0],
+        TEXT_POSITION: [0, 4, 0],
         COUNT: 1,
       },
       {
@@ -96,7 +107,7 @@ export const SCENE_CONFIGS = {
         POSITION: [0.25, -0.05, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.5, 0.5, 0.5],
-      },
+      }
     ],
   },
   SMB: {
