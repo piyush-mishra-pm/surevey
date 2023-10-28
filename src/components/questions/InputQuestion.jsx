@@ -10,7 +10,7 @@ function getSelectedOption(ques){
 }
 
 function InputQuestion({ ques }) {
-    const [selectedOption, setSelectedOption] = useState("");
+    const [selectedOption, setSelectedOption] = useState(getSelectedOption(ques));
 
     const handleOptionChange = (e) => {
         setSelectedOption(e.target.value);
@@ -21,7 +21,6 @@ function InputQuestion({ ques }) {
             <div className="ui form">
                 <div className="grouped fields">
                     <label htmlFor="fruit">{ques.text}</label>
-                    {console.log(ques)}
                     <div >
                             <div className="field">
                             <div className="ui input">
