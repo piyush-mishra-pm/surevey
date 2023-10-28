@@ -17,7 +17,7 @@ export const SCENE_CONFIGS = {
         MODEL_NAME: "EV",
         APPLIANCE_ID: "EV",
         MODEL_PATH: "/heavy-assets/models/EV.glb",
-        POSITION: [-0.3, 0, -0.7],
+        POSITION: [0, 0, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.6, 0.6, 0.6],
         TEXT_POSITION: [0, 0, 0],
@@ -67,9 +67,9 @@ export const SCENE_CONFIGS = {
         MODEL_NAME: "PoolPump",
         APPLIANCE_ID: "POOL_PUMP",
         MODEL_PATH: "/heavy-assets/models/PoolPump.glb",
-        POSITION: [0.5, 0, -1.5],
+        POSITION: [-0.2,0,-1],
         ROTATION: [0, 0, 0],
-        SCALE: [1, 1, 1],
+        SCALE: [0.6, 0.6, 0.6],
       },
       {
         MODEL_NAME: "Refrigerator",
@@ -91,6 +91,14 @@ export const SCENE_CONFIGS = {
         TEXT_POSITION: [0, 0, 0],
         COUNT: 1,
       },
+      {
+        MODEL_NAME: "Garage",
+        APPLIANCE_ID: "GARAGE",
+        MODEL_PATH: "/heavy-assets/models/Garage.glb",
+        POSITION: [0.25, -0.05,0 ],
+        ROTATION: [0, 0, 0],
+        SCALE: [0.5, 0.5, 0.5],
+      }
     ],
   },
   SMB: {
