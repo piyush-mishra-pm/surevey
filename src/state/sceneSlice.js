@@ -8,7 +8,7 @@ export const sceneSlice = createSlice({
   name: "scene",
   initialState,
   reducers: {
-    setSelection: (state, action) => {
+    setSelectedAppliance: (state, action) => {
       state.selectedAppliance = action.payload;
     },
     resetSelection: (state) => {
@@ -17,6 +17,8 @@ export const sceneSlice = createSlice({
   },
 });
 
-export const { setSelection, resetSelection } = sceneSlice.actions;
+export const selectedAppliaceSelector = state=>state.scene.selectedAppliance;
+
+export const { setSelectedAppliance, resetSelection } = sceneSlice.actions;
 
 export default sceneSlice.reducer;
