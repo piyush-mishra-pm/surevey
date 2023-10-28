@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { toast } from 'react-toastify';
 import { Canvas } from '@react-three/fiber'
-import { PresentationControls } from '@react-three/drei';
+import { EnvironmentMap, PresentationControls } from '@react-three/drei';
 import _ from 'lodash';
 
 import ModelLoader from './ModelLoader';
@@ -58,7 +58,7 @@ function SceneLoader(props) {
             <div style={{ "width": "100%", "height": "80%" }}>
                 <Canvas>
                     <PresentationControls snap global zoom={0.8} rotation={[Math.PI / 4, -Math.PI / 4, 0]} polar={[0, Math.PI / 4]} azimuth={[-Math.PI / 4, Math.PI / 4]}>
-                        <ambientLight />
+                        <ambientLight intensity={2.5} />
                         <pointLight position={[10, 10, 10]} />
                         {/** Load Base Model */}
                         {loadModels(props.sceneConfigs, CONSTANTS.SCENE_BASE_OBJECTS)}

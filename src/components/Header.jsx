@@ -8,7 +8,7 @@ function Header() {
                 Logo
             </div>
             <Link to="/" className='item'>Sure-vey</Link>
-            <Link to="/choose-survey" className='item'>Choose-Survey</Link>
+            <Link to="/choose-survey" className='item'>Choose-Survey(DEV MODE)</Link>
         </div>
     )
 }
