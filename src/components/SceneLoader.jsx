@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { toast } from 'react-toastify';
 import { Canvas } from '@react-three/fiber'
-import { EnvironmentMap, PresentationControls } from '@react-three/drei';
+import { PresentationControls } from '@react-three/drei';
 import _ from 'lodash';
+import { useSelector, useDispatch } from 'react-redux';
 
 import ModelLoader from './ModelLoader';
 import * as CONSTANTS from '../CONSTANTS';
+import { selectedAppliaceSelector, setSelectedAppliance } from '../state/sceneSlice';
 
 function loadModels(sceneConfigs, key){{
     if(!sceneConfigs || !sceneConfigs[key] || !Object.keys(sceneConfigs[key].length)){
@@ -13,12 +15,13 @@ function loadModels(sceneConfigs, key){{
         return '';
     }
 
-    const [selectedMesh, setSelectedMesh] = useState(-1);
+    const dispatch = useDispatch();
+    const selectedAppliance = useSelector(selectedAppliaceSelector);
 
     function onClickCollectionItem(e,index){
         e.stopPropagation();
         console.log('Clicked Collection Item: ' + index + ' ' + sceneConfigs[key][index]['MODEL_NAME']);
-        setSelectedMesh(index);
+        dispatch(setSelectedAppliance(index));
     }
     
     return sceneConfigs[key].map(
@@ -28,7 +31,7 @@ function loadModels(sceneConfigs, key){{
             const initialRotation = baseObjConf.ROTATION && baseObjConf.ROTATION.length ? baseObjConf.ROTATION : [0, 0, 0];
             let initialScale = _.cloneDeep(baseObjConf.SCALE && baseObjConf.SCALE.length ? baseObjConf.SCALE : [1, 1, 1]);
 
-            if (selectedMesh === index && key === CONSTANTS.SCENE_OBJECTS) {
+            if (selectedAppliance === index && key === CONSTANTS.SCENE_OBJECTS) {
                 // Should only alter scale of scene objects (Appliances, not the base props) items on Click.
                 initialScale = initialScale.map(s => CONSTANTS.ON_SELECT_SCALE * s);
             }
