@@ -103,7 +103,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "Electricity",
             value: "electricity",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"HEATPUMP_ELECTRIC", iconOverride:"electric", textOverride:null}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"HEATPUMP_ELECTRIC", iconOverride:"ELECTRIC", textOverride:null}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -122,7 +122,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "Gas",
             value: "gas",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"HEATPUMP_GAS", iconOverride:"electric", textOverride:null}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"HEATPUMP_GAS", iconOverride:"ELECTRIC", textOverride:null}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -172,7 +172,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "Wood",
             value: "wood",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"HEATING_FIREPLACE", iconOverride:"wood", textOverride:null}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"HEATING_FIREPLACE", iconOverride:"WOOD", textOverride:null}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -191,7 +191,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "Natural Gas",
             value: "naturalGas",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"HEATING_FIREPLACE", iconOverride:"gas", textOverride:null}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"HEATING_FIREPLACE", iconOverride:"GAS", textOverride:null}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -368,7 +368,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "Yes",
             value: "yes",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:SOLAR, iconOverride:null, textOverride:null}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"SOLAR", iconOverride:null, textOverride:null}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -465,7 +465,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "Yes",
             value: "yes",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:POOL_PUMP, iconOverride:null, textOverride:null}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"POOL_PUMP", iconOverride:null, textOverride:null}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -534,7 +534,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "Yes",
             value: "yes",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:POOL_PUMP, iconOverride:null, textOverride:"Covered Pool"}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"POOL_PUMP", iconOverride:null, textOverride:"Covered Pool"}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -553,7 +553,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "No",
             value: "no",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:POOL_PUMP, iconOverride:null, textOverride:"Uncovered Pool"}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"POOL_PUMP", iconOverride:null, textOverride:"Uncovered Pool"}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -603,7 +603,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "Electric",
             value: "electric",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:POOL_PUMP, iconOverride:"electric", textOverride:null}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"POOL_PUMP", iconOverride:"ELECTRIC", textOverride:null}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -622,7 +622,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "Natural Gas",
             value: "Natural gas",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:POOL_PUMP, iconOverride:"gas", textOverride:null}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"POOL_PUMP", iconOverride:"GAS", textOverride:null}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -641,7 +641,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "Solar",
             value: "solar",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:POOL_PUMP, iconOverride:"solar", textOverride:null}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"POOL_PUMP", iconOverride:"SOLAR", textOverride:null}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -688,7 +688,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "Yes",
             value: "yes",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:EV, iconOverride:null, textOverride:null}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"EV", iconOverride:null, textOverride:null}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -707,7 +707,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "No",
             value: "no",
-            renderProp: {actionType:"PRESENCE", payload:{val:false, appIdOverride:EV, iconOverride:null, textOverride:null}},
+            renderProp: {actionType:"PRESENCE", payload:{val:false, appIdOverride:"EV", iconOverride:null, textOverride:null}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -757,7 +757,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "Always",
             value: "always",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:EV, iconOverride:null, textOverride:"Always Charge in Home"}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"EV", iconOverride:null, textOverride:"Always Charge in Home"}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -776,7 +776,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "Sometimes",
             value: "sometimes",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:EV, iconOverride:null, textOverride:"Sometimes Charge in Home"}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"EV", iconOverride:null, textOverride:"Sometimes Charge in Home"}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -795,7 +795,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "Never",
             value: "never",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:EV, iconOverride:null, textOverride:"Never Charge in Home"}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"EV", iconOverride:null, textOverride:"Never Charge in Home"}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -842,7 +842,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "1",
             value: "one",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:REFRIGERATOR, iconOverride:null, textOverride:"Count:1"}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"REFRIGERATOR", iconOverride:null, textOverride:"Count:1"}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -861,7 +861,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "2",
             value: "two",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:REFRIGERATOR, iconOverride:null, textOverride:"Count:2"}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"REFRIGERATOR", iconOverride:null, textOverride:"Count:2"}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -880,7 +880,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "3 or more",
             value: "threeplus",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:REFRIGERATOR, iconOverride:null, textOverride:"Count:3 or more"}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"REFRIGERATOR", iconOverride:null, textOverride:"Count:3 or more"}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
