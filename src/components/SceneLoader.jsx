@@ -1,13 +1,14 @@
 import React from 'react'
 import { toast } from 'react-toastify';
 import { Canvas } from '@react-three/fiber'
-import { CubeCamera, Environment, PresentationControls } from '@react-three/drei';
+import { Environment, PresentationControls } from '@react-three/drei';
 import _ from 'lodash';
 import { useSelector, useDispatch } from 'react-redux';
 
 import ModelLoader from './ModelLoader';
 import * as CONSTANTS from '../CONSTANTS';
 import { selectedAppliaceSelector, setSelectedAppliance } from '../state/sceneSlice';
+import { CubeWithImages } from './PrimitiveLoader';
 
 function loadModels(sceneConfigs, key){{
     if(!sceneConfigs || !sceneConfigs[key] || !Object.keys(sceneConfigs[key].length)){
@@ -48,6 +49,10 @@ function loadModels(sceneConfigs, key){{
                     baseObjConf.TEXT_POSITION[2] + initialPosition[2],
                 ] : [0,0,0];
             }
+
+            // Put conditional rendering for Primitives:
+            // return <CubeWithImages key={index} />;
+            // return <YRotatingBox key={index}/>
 
             return <ModelLoader 
                 key={index} 

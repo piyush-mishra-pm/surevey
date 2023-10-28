@@ -1,16 +1,14 @@
 import _ from "lodash";
 
 import { SAMPLE_RESPONSE } from "../conf/SampleResponse";
+import { STATE_ANSWERED } from "../CONSTANTS";
 
 export function getQuestionsForAppliance(applianceGroup) {
   if(applianceGroup == null){
     return [];
   }
   
-  const cloned = _.cloneDeep(SAMPLE_RESPONSE.payload.questions);
-    return cloned
-        .filter((ques) => ques.group == applianceGroup)
-        .map(simplifyBidgelyQuesObj);
+  return _.cloneDeep(SAMPLE_RESPONSE.payload.questions).filter((ques) => ques.group == applianceGroup);
 }
 
 export function simplifyBidgelyQuesObj(bidgelyQuestion) {
@@ -36,4 +34,11 @@ export function simplifyBidgelyQuesObj(bidgelyQuestion) {
 
 function simplifyBidgelyAnswerChoice(choice) {
   return _.pick(choice, ["text", "value", "renderProp"]);
+}
+
+export function getSelectedOption(ques) {
+  if (ques.state === STATE_ANSWERED && ques.answers) {
+    return ques.answers[0];
+  }
+  return "";
 }

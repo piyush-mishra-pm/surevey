@@ -19,6 +19,14 @@ export const SCENE_CONFIGS = {
         SCALE: [0.6, 0.6, 0.6],
         COUNT: 1,
       },
+      {
+        MODEL_NAME: "Garage",
+        APPLIANCE_ID: "GARAGE",
+        MODEL_PATH: "/heavy-assets/models/Garage.glb",
+        POSITION: [0.25, -0.05, 0],
+        ROTATION: [0, 0, 0],
+        SCALE: [0.5, 0.5, 0.5],
+      },
     ],
     SCENE_OBJECTS: [
       {
@@ -53,7 +61,7 @@ export const SCENE_CONFIGS = {
       },
       {
         MODEL_NAME: "PoolPump",
-        APPLIANCE_ID: "POOL_PUMP",
+        APPLIANCE_ID: "PP",
         MODEL_PATH: "/heavy-assets/models/PoolPump.glb",
         POSITION: [-0.2, 0, -1],
         ROTATION: [0, 0, 0],
@@ -79,14 +87,6 @@ export const SCENE_CONFIGS = {
         SCALE: [0.5, 0.5, 0.5],
         TEXT_POSITION: [0, 4, 0],
         COUNT: 1,
-      },
-      {
-        MODEL_NAME: "Garage",
-        APPLIANCE_ID: "GARAGE",
-        MODEL_PATH: "/heavy-assets/models/Garage.glb",
-        POSITION: [0.25, -0.05, 0],
-        ROTATION: [0, 0, 0],
-        SCALE: [0.5, 0.5, 0.5],
       },
     ],
   },

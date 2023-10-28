@@ -1,13 +1,5 @@
 import React, { useState } from 'react'
-
-import { STATE_ANSWERED } from '../../CONSTANTS';
-
-function getSelectedOption(ques){
-    if(ques.state === STATE_ANSWERED && ques.answers){
-        return ques.answers[0];
-    }
-    return '';
-}
+import { getSelectedOption } from '../../helpers/surveyHelpers';
 
 function InputQuestion({ ques }) {
     const [selectedOption, setSelectedOption] = useState(getSelectedOption(ques));
