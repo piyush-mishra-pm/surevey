@@ -4,6 +4,52 @@ export const SAMPLE_RESPONSE = {
     surveyId: "defaultSurvey",
     questions: [
       {
+        id: "Q1",
+        order: 1,
+        state: "ANSWERED",
+        options: null,
+        info: null,
+        parent: null,
+        answerType: "BOOLEAN",
+        choices: [
+          {
+            text: "",
+            value: "",
+            parent: null,
+            allowedValues: null,
+            allowedValuesMap: null,
+            selectionType: null,
+            order: 1,
+            subChoiceValidationType: null,
+            read: {
+              selected: "AP:16:C:1-",
+              unselected: null,
+            },
+            write: {
+              selected: "AP:16:C:1",
+              unselected: "AP:16:C:0,AP:16:A:TYPE-null",
+            },
+          },
+        ],
+        answers: [""],
+        valueSelectionMap: null,
+        stateMapper: "AP:16-C",
+        mandatory: false,
+        feMultiplierForNumberTypeQuestion: null,
+        questionTemplate: null,
+        singleChoiceQuestion: false,
+        multipleChoiceQuestion: false,
+        multipleWithSubChoiceQuestion: false,
+        numberQuestion: false,
+        textQuestion: true,
+        type: "SINGLE",
+        group: "EV",
+        text: "EV Make?",
+        category: null,
+        profileCode: "AP",
+        subType: null,
+      },
+      {
         id: "Q6", //
         order: 6,
         state: "ANSWERED", //

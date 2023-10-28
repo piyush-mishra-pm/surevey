@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import * as CONSTANTS from '../CONSTANTS';
 import { getQuestionsForAppliance } from '../helpers/surveyHelpers';
 import SingleChoiceQuestion from './questions/SingleChoiceQuestion';
+import InputQuestion from './questions/InputQuestion';
 
 function SurveyQuestionArea() {
   // Selected Appliances:
@@ -38,9 +39,9 @@ function SurveyQuestionArea() {
       } else if (ques.multipleWithSubChoiceQuestion) {
 
       } else if (ques.textQuestion) {
-
+        return <InputQuestion key={index} ques={ques}/>
       } else if (ques.numberQuestion) {
-
+        return <InputQuestion key={index} ques={ques}/>
       } else {
         console.error("Survey UI not configured for the question type.");
       }
