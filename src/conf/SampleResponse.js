@@ -34,7 +34,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "Fireplace",
             value: "fireplace",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"HEATING_FIREPLACE", iconOverride:null, textOverride:null}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"HEATING", iconOverride:null, textOverride:null}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -172,7 +172,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "Wood",
             value: "wood",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"HEATING_FIREPLACE", iconOverride:"WOOD", textOverride:null}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"HEATING", iconOverride:"WOOD", textOverride:null}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,
@@ -191,7 +191,7 @@ export const SAMPLE_RESPONSE = {
           {
             text: "Natural Gas",
             value: "naturalGas",
-            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"HEATING_FIREPLACE", iconOverride:"GAS", textOverride:null}},
+            renderProp: {actionType:"PRESENCE", payload:{val:true, appIdOverride:"HEATING", iconOverride:"GAS", textOverride:null}},
             parent: null,
             allowedValues: null,
             allowedValuesMap: null,

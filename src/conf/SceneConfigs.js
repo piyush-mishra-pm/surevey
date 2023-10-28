@@ -33,7 +33,7 @@ export const SCENE_CONFIGS = {
       },
       {
         MODEL_NAME: "Fireplace",
-        APPLIANCE_ID: "HEATING_FIREPLACE",
+        APPLIANCE_ID: "HEATING",
         MODEL_PATH: "/heavy-assets/models/Fireplace.glb",
         POSITION: [0, 0, 0],
         ROTATION: [0, 0, 0],
@@ -52,16 +52,6 @@ export const SCENE_CONFIGS = {
         COUNT: 1,
       },
       {
-        MODEL_NAME: "Horizon",
-        APPLIANCE_ID: "HORIZON",
-        MODEL_PATH: "/heavy-assets/models/Horizon.glb",
-        POSITION: [0, 0, 0],
-        ROTATION: [0, 0, 0],
-        SCALE: [0.6, 0.6, 0.6],
-        TEXT_POSITION: [0, 0, 0],
-        COUNT: 1,
-      },
-      {
         MODEL_NAME: "PoolPump",
         APPLIANCE_ID: "POOL_PUMP",
         MODEL_PATH: "/heavy-assets/models/PoolPump.glb",
@@ -77,7 +67,7 @@ export const SCENE_CONFIGS = {
         POSITION: [0.3, 0, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.7, 0.7, 0.7],
-        TEXT_POSITION: [-3, 1, 1.20],
+        TEXT_POSITION: [-3, 1, 1.2],
         COUNT: 1,
       },
       {
@@ -97,7 +87,7 @@ export const SCENE_CONFIGS = {
         POSITION: [0.25, -0.05, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.5, 0.5, 0.5],
-      }
+      },
     ],
   },
   SMB: {
