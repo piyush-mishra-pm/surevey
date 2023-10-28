@@ -13,7 +13,7 @@ export function getQuestionsForAppliance(applianceGroup) {
         .map(simplifyBidgelyQuesObj);
 }
 
-function simplifyBidgelyQuesObj(bidgelyQuestion) {
+export function simplifyBidgelyQuesObj(bidgelyQuestion) {
   const shortened = _.pick(bidgelyQuestion, [
       "id",
       "state",
@@ -35,5 +35,5 @@ function simplifyBidgelyQuesObj(bidgelyQuestion) {
 }
 
 function simplifyBidgelyAnswerChoice(choice) {
-  return _.pick(choice, ["text", "value"]);
+  return _.pick(choice, ["text", "value", "renderProp"]);
 }

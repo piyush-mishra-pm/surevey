@@ -1,8 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 import { QUESTION_ANSWERED_STATES } from "../CONSTANTS";
+import { simplifyBidgelyQuesObj } from "../helpers/surveyHelpers";
+import { SAMPLE_RESPONSE } from "../conf/SampleResponse";
 
 const initialState = {
-  apiJson: null,
+  apiJson: SAMPLE_RESPONSE.payload.questions.map(simplifyBidgelyQuesObj),
 };
 
 export const surveySlice = createSlice({
