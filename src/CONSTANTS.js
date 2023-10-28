@@ -10,4 +10,22 @@ export const SCENE_BASE_OBJECTS = "SCENE_BASE_OBJECTS";
 
 export const STATE_ANSWERED = "ANSWERED";
 
-export const APP_GROUP_SOLAR="SOLAR";
+export const APPLIANCE_GROUPS = {
+  SOLAR: "SOLAR",
+  EV:"EV",
+  HEATING:"HEATING",
+  COOLING:"COOLING",
+  REFRIGERATOR:"REFRIGERATOR",
+  PP:"PP",
+  WATER_HEATING:"WATER_HEATING",
+};
+
+export const APP_GROUPS_IMAGES = {
+  SOLAR:"https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280",
+  EV: "https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280",
+  HEATING:"https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280",
+  COOLING:"https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280",
+  REFRIGERATOR:"https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280",
+  PP: "https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280",
+  WATER_HEATING:"https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280",
+};

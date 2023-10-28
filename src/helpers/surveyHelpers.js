@@ -3,6 +3,10 @@ import _ from "lodash";
 import { SAMPLE_RESPONSE } from "../conf/SampleResponse";
 
 export function getQuestionsForAppliance(applianceGroup) {
+  if(applianceGroup == null){
+    return [];
+  }
+  
   const cloned = _.cloneDeep(SAMPLE_RESPONSE.payload.questions);
     return cloned
         .filter((ques) => ques.group == applianceGroup)

@@ -21,7 +21,7 @@ function Survey() {
                     Survey Model Area
                     <SceneLoader sceneConfigs={SCENE_CONFIGS[userType]} />
                 </div>
-                <div style={{ flexGrow: 1, "background": "blue", "padding": "1rem" }}>
+                <div style={{ flexGrow: 1, "background": "blue", "padding": "1rem", overflow: "auto", maxHeight:"500px" }}>
                     Survey Question Area
                     <SurveyQuestionArea/>
                 </div>
