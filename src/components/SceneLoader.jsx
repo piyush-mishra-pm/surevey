@@ -1,7 +1,7 @@
 import React from 'react'
 import { toast } from 'react-toastify';
 import { Canvas } from '@react-three/fiber'
-import { Environment, PresentationControls } from '@react-three/drei';
+import { CubeCamera, Environment, PresentationControls } from '@react-three/drei';
 import _ from 'lodash';
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -59,11 +59,9 @@ function SceneLoader(props) {
         <>
             <div>SceneLoader</div>
             <div style={{ "width": "100%", "height": "80%" }}>
-                <Canvas>
-                    <PresentationControls snap global zoom={0.8} rotation={[Math.PI / 7, -Math.PI / 4, 0]} polar={[0, Math.PI / 4]} azimuth={[-Math.PI / 4, Math.PI / 4]}>
-                        <rectAreaLight position={[0, 10, 10]} intensity={5}/>
-                        <rectAreaLight position={[5, 0, 0]} intensity={2} rotation={[0, 90, 0]} width={10} height={10}/>
-                        {/* <rectAreaLight position={[-5, 0, 0]} intensity={2} rotation={[0, -90, 0]} castShadow="true"/> */}
+                <Canvas camera={{fov:90}}>
+                    <PresentationControls snap global zoom={0.8} rotation={[Math.PI / 7, -Math.PI / 3, 0]} polar={[0, Math.PI / 4]} azimuth={[-Math.PI / 4, Math.PI / 4]}>
+                    <Environment background near={1} far={1000} resolution={256} files={"/heavy-assets/meadow_2_1k.hdr"} ground/>
                         {/** Load Base Model */}
                         {loadModels(props.sceneConfigs, CONSTANTS.SCENE_BASE_OBJECTS)}
                         {/** Load Scene Objects */}

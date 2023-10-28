@@ -54,16 +54,6 @@ export const SCENE_CONFIGS = {
         COUNT: 1,
       },
       {
-        MODEL_NAME: "HP_Electric",
-        APPLIANCE_ID: "HEATPUMP_ELECTRIC",
-        MODEL_PATH: "/heavy-assets/models/HP_Electric.glb",
-        POSITION: [1.3, 0, 1],
-        ROTATION: [0, 1.6, 0],
-        SCALE: [0.2, 0.2, 0.2],
-        TEXT_POSITION: [7, -14, -2],
-        COUNT: 1,
-      },
-      {
         MODEL_NAME: "PoolPump",
         APPLIANCE_ID: "POOL_PUMP",
         MODEL_PATH: "/heavy-assets/models/PoolPump.glb",
