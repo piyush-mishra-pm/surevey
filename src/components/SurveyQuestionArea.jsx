@@ -1,13 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useSelector, useDispatch } from 'react-redux';
 
 import * as CONSTANTS from '../CONSTANTS';
 import { getQuestionsForAppliance } from '../helpers/surveyHelpers';
 import SingleChoiceQuestion from './questions/SingleChoiceQuestion';
 import InputQuestion from './questions/InputQuestion';
+import { setSelectedAppliance, selectedAppliaceSelector } from '../state/sceneSlice';
 
 function SurveyQuestionArea() {
   // Selected Appliances:
-  const [selectedAppliance, setSelectedAppliance] = useState(null);
+  const selectedAppliance = useSelector(selectedAppliaceSelector);
+  const dispatch = useDispatch();
+  
+  function selectAppliance(appGroup){
+    dispatch(setSelectedAppliance(appGroup));
+  }
 
   // Load all questions for that appliance:
   const questionsForAppliance = getQuestionsForAppliance(selectedAppliance);
@@ -20,7 +27,7 @@ function SurveyQuestionArea() {
       <div className="ui horizontal relaxed list" key={i}>
         <div className="item" style={{ margin: '.3rem' }}>
           <div className="content">
-            <a className="ui label" onClick={()=>setSelectedAppliance(appGroup)}>
+            <a className="ui label" onClick={()=>selectAppliance(appGroup)}>
               <img className="ui right spaced avatar image" src={CONSTANTS.APP_GROUPS_IMAGES[appGroup]} />
               {appGroup}
             </a>

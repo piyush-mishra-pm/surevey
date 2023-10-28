@@ -21,7 +21,7 @@ function loadModels(sceneConfigs, key){{
     function onClickCollectionItem(e,index){
         e.stopPropagation();
         console.log('Clicked Collection Item: ' + index + ' ' + sceneConfigs[key][index]['MODEL_NAME']);
-        dispatch(setSelectedAppliance(index));
+        dispatch(setSelectedAppliance(sceneConfigs[key][index]['APPLIANCE_ID']));
     }
     
     return sceneConfigs[key].map(
@@ -32,7 +32,7 @@ function loadModels(sceneConfigs, key){{
             let initialScale = _.cloneDeep(baseObjConf.SCALE && baseObjConf.SCALE.length ? baseObjConf.SCALE : [1, 1, 1]);
             let textPosition =null;
 
-            if (selectedAppliance === index && key === CONSTANTS.SCENE_OBJECTS) {
+            if (selectedAppliance === baseObjConf['APPLIANCE_ID'] && key === CONSTANTS.SCENE_OBJECTS) {
                 // Should only alter scale of scene objects (Appliances, not the base props) items on Click.
                 initialScale = initialScale.map(s => CONSTANTS.ON_SELECT_SCALE * s);
                 // Show Arrow for Selected object:
