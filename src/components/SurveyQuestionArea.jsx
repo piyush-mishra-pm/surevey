@@ -6,7 +6,7 @@ import SingleChoiceQuestion from './questions/SingleChoiceQuestion';
 
 function SurveyQuestionArea() {
   // Selected Appliances:
-  const [selectedAppliance, setSelectedAppliance] = useState(CONSTANTS.APPLIANCE_GROUPS.SOLAR);
+  const [selectedAppliance, setSelectedAppliance] = useState(null);
 
   // Load all questions for that appliance:
   const questionsForAppliance = getQuestionsForAppliance(selectedAppliance);
@@ -19,7 +19,7 @@ function SurveyQuestionArea() {
       <div className="ui horizontal relaxed list" key={i}>
         <div className="item" style={{ margin: '.3rem' }}>
           <div className="content">
-            <a className="ui label">
+            <a className="ui label" onClick={()=>setSelectedAppliance(appGroup)}>
               <img className="ui right spaced avatar image" src={CONSTANTS.APP_GROUPS_IMAGES[appGroup]} />
               {appGroup}
             </a>
@@ -48,9 +48,17 @@ function SurveyQuestionArea() {
   }
   return (
     <div>
-      <h2>SurveyQuestionArea</h2>
+      <h3>Select an appliance</h3>
       {renderApplianceGroups()}
-      {renderQuestions()}
+      <hr/>
+
+      {selectedAppliance &&
+        <>
+          <h3>Answer questions for your {selectedAppliance} appliance:</h3>
+          {renderQuestions()}
+        </>
+      }
+
     </div>
   )
 }

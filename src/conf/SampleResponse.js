@@ -1653,7 +1653,7 @@ export const SAMPLE_RESPONSE = {
         numberQuestion: false,
         textQuestion: false,
         type: "SINGLE",
-        group: "SOLAR",
+        group: "PP",
         text: "Do you own a battery or an inverter?",
         category: null,
         profileCode: "AP",
