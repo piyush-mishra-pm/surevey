@@ -20,7 +20,13 @@ function loadModels(sceneConfigs, key){{
 
     function onClickCollectionItem(e,index){
         e.stopPropagation();
-        console.log('Clicked Collection Item: ' + index + ' ' + sceneConfigs[key][index]['MODEL_NAME']);
+        // Filter for only clickable Appliances (base props should not be selected).
+        const found = Object.keys(CONSTANTS.APPLIANCE_GROUPS).find(appGroup => appGroup === sceneConfigs[key][index]['APPLIANCE_ID']);
+        if(!found){
+            console.info(`Wont select ${sceneConfigs[key][index]['APPLIANCE_ID']}, as not in appliance groups (Constant.js).`);
+            return;
+        }
+        console.log('Clicked Appliance Group: ' + sceneConfigs[key][index]['MODEL_NAME']);
         dispatch(setSelectedAppliance(sceneConfigs[key][index]['APPLIANCE_ID']));
     }
     
