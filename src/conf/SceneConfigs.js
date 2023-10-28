@@ -8,6 +8,8 @@ export const SCENE_CONFIGS = {
         POSITION: [0, 0, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.60, 0.60, 0.60],
+        TEXT_POSITION: [],
+        COUNT: 1,
       },
     ],
     SCENE_OBJECTS: [
@@ -18,6 +20,8 @@ export const SCENE_CONFIGS = {
         POSITION: [0, 0, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.6, 0.6, 0.6],
+        TEXT_POSITION: [0, 0, 0],
+        COUNT: 1,
       },
       {
         MODEL_NAME: "Fireplace",
@@ -26,6 +30,8 @@ export const SCENE_CONFIGS = {
         POSITION: [0, 0, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.6, 0.6, 0.6],
+        TEXT_POSITION: [0, 0, 0],
+        COUNT: 1,
       },
       {
         MODEL_NAME: "HeatPump_Gas",
@@ -34,6 +40,8 @@ export const SCENE_CONFIGS = {
         POSITION: [0, 0, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.6, 0.6, 0.6],
+        TEXT_POSITION: [0, 0, 0],
+        COUNT: 1,
       },
       {
         MODEL_NAME: "Horizon",
@@ -42,6 +50,8 @@ export const SCENE_CONFIGS = {
         POSITION: [0, 0, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.6, 0.6, 0.6],
+        TEXT_POSITION: [0, 0, 0],
+        COUNT: 1,
       },
       {
         MODEL_NAME: "HP_Electric",
@@ -50,6 +60,8 @@ export const SCENE_CONFIGS = {
         POSITION: [1.3, 0, 1],
         ROTATION: [0, 1.6, 0],
         SCALE: [0.2, 0.2, 0.2],
+        TEXT_POSITION: [0, 0, 0],
+        COUNT: 1,
       },
       {
         MODEL_NAME: "PoolPump",
@@ -66,6 +78,8 @@ export const SCENE_CONFIGS = {
         POSITION: [0.3, 0, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.7, 0.7, 0.7],
+        TEXT_POSITION: [0, 0, 0],
+        COUNT: 1,
       },
       {
         MODEL_NAME: "Solar",
@@ -74,6 +88,8 @@ export const SCENE_CONFIGS = {
         POSITION: [0, 0.4, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.5, 0.5, 0.5],
+        TEXT_POSITION: [0, 0, 0],
+        COUNT: 1,
       },
       {
         MODEL_NAME: "Garage",
