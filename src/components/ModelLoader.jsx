@@ -12,7 +12,7 @@ export default function ModelLoader(props) {
 
     return <>
         <primitive onClick={(e) => props.onClickEvent(e)} object={gltf.scene} position={props.position} rotation={props.rotation} scale={props.scale}>
-            <Html position={props.modelProps.TEXT_POSITION} wrapperClass="label">
+            {props.textPosition && <Html position={props.textPosition} wrapperClass="label">
                 <div>
                     <div>
                         <span className="m_scroll_arrows unu"></span>
@@ -20,7 +20,7 @@ export default function ModelLoader(props) {
                         <span className="m_scroll_arrows trei"></span>
                     </div>
                 </div>
-            </Html>
+            </Html>}
         </primitive>
     </>
 }
