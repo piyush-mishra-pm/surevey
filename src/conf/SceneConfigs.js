@@ -7,7 +7,7 @@ export const SCENE_CONFIGS = {
         MODEL_PATH: "/heavy-assets/models/House.glb",
         POSITION: [0, 0, 0],
         ROTATION: [0, 0, 0],
-        SCALE: [1, 1, 1],
+        SCALE: [0.60, 0.60, 0.60],
       },
       {
         MODEL_NAME: "Base-Lantern",
@@ -22,9 +22,9 @@ export const SCENE_CONFIGS = {
         MODEL_NAME: "Scene-Fox",
         APPLIANCE_ID: "FOX",
         MODEL_PATH: "/heavy-assets/models/Fox.glb",
-        POSITION: [0, 0, 0],
-        ROTATION: [0, -Math.PI / 4, 0],
-        SCALE: [0.02, 0.02, 0.02],
+        POSITION: [-0.8, 0, -1],
+        ROTATION: [0, 1.4, 0],
+        SCALE: [0.01, 0.01, 0.01],
       },
       {
         MODEL_NAME: "Scene-Lantern2",

@@ -17,11 +17,11 @@ function Survey() {
         <>
             <div>Survey for {userType}</div>
             <div style={{ "display": "flex", "margin": "1rem", "color": "white" }}>
-                <div style={{ "width": "70%", "height": "500px", "background": "green", "padding": "1rem" }}>
+                <div style={{ "width": "70%", "height": "920px", "background": "black", "padding": "1rem" }}>
                     Survey Model Area
                     <SceneLoader sceneConfigs={SCENE_CONFIGS[userType]} />
                 </div>
-                <div style={{ flexGrow: 1, "background": "blue", "padding": "1rem", overflow: "auto", maxHeight:"500px" }}>
+                <div style={{ flexGrow: 1, "background": "lightBlue", "padding": "1rem", overflow: "auto", maxHeight:"920px" }}>
                     Survey Question Area
                     <SurveyQuestionArea/>
                 </div>

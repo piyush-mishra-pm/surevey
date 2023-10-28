@@ -21,11 +21,11 @@ export const APPLIANCE_GROUPS = {
 };
 
 export const APP_GROUPS_IMAGES = {
-  SOLAR:"https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280",
-  EV: "https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280",
-  HEATING:"https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280",
-  COOLING:"https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280",
-  REFRIGERATOR:"https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280",
-  PP: "https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280",
-  WATER_HEATING:"https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280",
-};
+    SOLAR:"https://d13hc4rsp6iv99.cloudfront.net/dev/Solar-Energy-icon.jpg",
+    EV: "https://d13hc4rsp6iv99.cloudfront.net/dev/home-ev-charging-point-black-glyph-icon-vector-37786329.jpg",
+    HEATING:"https://d13hc4rsp6iv99.cloudfront.net/dev/heating-icon-0.png",
+    COOLING:"https://d13hc4rsp6iv99.cloudfront.net/dev/icon_cooling.png",
+    REFRIGERATOR:"https://d13hc4rsp6iv99.cloudfront.net/dev/fridge-icon.jpg",
+    PP: "https://d13hc4rsp6iv99.cloudfront.net/dev/pool-water-pump-icon-png-image_4866405.png",
+    WATER_HEATING:"https://d13hc4rsp6iv99.cloudfront.net/dev/wh.jpg",
+  };
