@@ -12,7 +12,6 @@ function Home() {
                 </div>
                 <Link className="positive ui button" to="/survey/RESI">Start Survey !</Link>
             </div>
-
         </div>
     )
 }
