@@ -33,7 +33,7 @@ export const APPLIANCE_GROUPS = {
         POSITION: [0, 0.34, 0.1],
         ROTATION: [-0.01, 0, 0],
         SCALE: [0.5, 0.5, 0.5],
-        TEXT_POSITION: [0, 4, 0],
+        TEXT_POSITION: [-9, 2.5, 0],
         COUNT: 1,
       },
       SOLAR0: {
@@ -44,7 +44,7 @@ export const APPLIANCE_GROUPS = {
         POSITION: [0, 0.34, 0.1],
         ROTATION: [-0.01, 0, 0],
         SCALE: [0.5, 0.5, 0.5],
-        TEXT_POSITION: [0, 4, 0],
+        TEXT_POSITION: [-9, 2.5, 0],
         COUNT: 1,
       },
     },
@@ -67,7 +67,7 @@ export const APPLIANCE_GROUPS = {
         POSITION: [0, 0.34, 0.1],
         ROTATION: [-0.01, 0, 0],
         SCALE: [0.5, 0.5, 0.5],
-        TEXT_POSITION: [0, 4, 0],
+        TEXT_POSITION: [3, 0, -3],
         COUNT: 1,
       },
       EV0: {
@@ -78,7 +78,109 @@ export const APPLIANCE_GROUPS = {
         POSITION: [0, 0, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.6, 0.6, 0.6],
-        TEXT_POSITION: [0, 0, 0],
+        TEXT_POSITION: [3, 0, -3],
+        COUNT: 1,
+      },
+    },
+  },
+  HEATING: {
+    // This is visible in Survey applaince group panel.
+    APP_GROUP_DISPLAY_NAME: "HEATING",
+    // This is visible in Survey applaince group panel.
+    APP_GROUP_DISPLAY_ICON:
+      "https://d13hc4rsp6iv99.cloudfront.net/dev/heating-icon-0.png",
+
+    SCENE_START_VARIANT: "HEATING0",
+
+    VARIANTS: {
+      HEATINGq: {
+        VARIANT_ID: "HEATINGq",
+        VARIANT_TYPE: PRIMITIVE_TYPE.BOX,
+        // MODEL_PATH will not be used, if VARIANT_TYPE is not null
+        MODEL_PATH: null,
+        POSITION: [0, 0, 0],
+        ROTATION: [0, 0, 0],
+        SCALE: [0.6, 0.6, 0.6],
+        TEXT_POSITION: [-20, -4.5, -6],
+        COUNT: 1,
+      },
+      HEATING0: {
+        VARIANT_ID: "HEATING0",
+        // VARIANT_TYPE not needed (null, or left out) as we need an actual model here.
+        VARIANT_TYPE: null,
+        MODEL_PATH: "/heavy-assets/models/Fireplace.glb",
+        POSITION: [0, 0, 0],
+        ROTATION: [0, 0, 0],
+        SCALE: [0.6, 0.6, 0.6],
+        TEXT_POSITION: [-20, -4.5, -6],
+        COUNT: 1,
+      },
+    },
+  },
+  REFRIGERATOR: {
+    // This is visible in Survey applaince group panel.
+    APP_GROUP_DISPLAY_NAME: "REFRIGERATOR",
+    // This is visible in Survey applaince group panel.
+    APP_GROUP_DISPLAY_ICON:
+      "https://d13hc4rsp6iv99.cloudfront.net/dev/fridge-icon.jpg",
+
+    SCENE_START_VARIANT: "REFRIGERATOR0",
+
+    VARIANTS: {
+      REFRIGERATORq: {
+        VARIANT_ID: "REFRIGERATORq",
+        VARIANT_TYPE: PRIMITIVE_TYPE.BOX,
+        // MODEL_PATH will not be used, if VARIANT_TYPE is not null
+        MODEL_PATH: null,
+        POSITION: [0.3, 0, 0],
+        ROTATION: [0, 0, 0],
+        SCALE: [0.7, 0.7, 0.7],
+        TEXT_POSITION: [-3, 1, 1.2],
+        COUNT: 1,
+      },
+      REFRIGERATOR0: {
+        VARIANT_ID: "REFRIGERATOR0",
+        // VARIANT_TYPE not needed (null, or left out) as we need an actual model here.
+        VARIANT_TYPE: null,
+        MODEL_PATH: "/heavy-assets/models/Refrigerator.glb",
+        POSITION: [0.3, 0, 0],
+        ROTATION: [0, 0, 0],
+        SCALE: [0.7, 0.7, 0.7],
+        TEXT_POSITION: [-3, 1, 1.2],
+        COUNT: 1,
+      },
+    },
+  },
+  PP: {
+    // This is visible in Survey applaince group panel.
+    APP_GROUP_DISPLAY_NAME: "POOL PUMP",
+    // This is visible in Survey applaince group panel.
+    APP_GROUP_DISPLAY_ICON:
+      "https://d13hc4rsp6iv99.cloudfront.net/dev/pool-water-pump-icon-png-image_4866405.png",
+
+    SCENE_START_VARIANT: "PP0",
+
+    VARIANTS: {
+      PPq: {
+        VARIANT_ID: "PPq",
+        VARIANT_TYPE: PRIMITIVE_TYPE.BOX,
+        // MODEL_PATH will not be used, if VARIANT_TYPE is not null
+        MODEL_PATH: null,
+        POSITION: [-0.2, 0, -1],
+        ROTATION: [0, 0, 0],
+        SCALE: [0.6, 0.6, 0.6],
+        TEXT_POSITION: [-7, 5, 10],
+        COUNT: 1,
+      },
+      PP0: {
+        VARIANT_ID: "PP0",
+        // VARIANT_TYPE not needed (null, or left out) as we need an actual model here.
+        VARIANT_TYPE: null,
+        MODEL_PATH: "/heavy-assets/models/PoolPump.glb",
+        POSITION: [-0.2, 0, -1],
+        ROTATION: [0, 0, 0],
+        SCALE: [0.6, 0.6, 0.6],
+        TEXT_POSITION: [-7, 5, 10],
         COUNT: 1,
       },
     },
