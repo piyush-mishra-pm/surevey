@@ -180,7 +180,7 @@ export const APPLIANCE_GROUPS = {
         POSITION: [-0.2, 0, -1],
         ROTATION: [0, 0, 0],
         SCALE: [0.6, 0.6, 0.6],
-        TEXT_POSITION: [-7, 5, 10],
+        TEXT_POSITION: [-120, -35, -1],
         COUNT: 1,
       },
     },
