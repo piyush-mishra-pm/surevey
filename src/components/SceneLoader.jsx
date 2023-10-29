@@ -107,7 +107,6 @@ function SceneLoader(props) {
 
     return (
         <>
-            <div>SceneLoader</div>
             <div style={{ "width": "100%", "height": "80%" }}>
                 <Canvas camera={{fov:90}}>
                     <PresentationControls snap global zoom={0.8} rotation={[Math.PI / 7, -Math.PI / 3, 0]} polar={[0, Math.PI / 4]} azimuth={[-Math.PI / 4, Math.PI / 4]}>

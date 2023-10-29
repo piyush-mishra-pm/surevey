@@ -42,3 +42,7 @@ export function getSelectedOption(ques) {
   }
   return "";
 }
+
+export function getQuestionIndexById(id, quesState){
+  return quesState.findIndex(q => q.id === id);
+}

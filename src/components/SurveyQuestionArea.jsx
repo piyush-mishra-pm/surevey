@@ -56,7 +56,7 @@ function SurveyQuestionArea() {
   }
   return (
     <div>
-      <h3>Select an appliance</h3>
+      <h4>Select an appliance</h4>
       {renderApplianceGroups()}
       <hr/>
 

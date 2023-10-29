@@ -13,18 +13,22 @@ export const surveySlice = createSlice({
   initialState,
   reducers: {
     answerQuestion: (s, action) => {
-      const {id, state, answers} = action.payload;
-      s.api[id].state = state;
-      s.api[id].answers = [...answers];
+      const {qIndex, state, answers} = action.payload;
+      console.log({ qIndex, state, answers });
+      s.apiJson[qIndex].state = state;
+      s.apiJson[qIndex].answers = [...answers];
     },
     resetQuestion: (s, action) => {
       const { id } = action.payload;
-      s.api[id].state = QUESTION_ANSWERED_STATES.UNANSWERED;
-      s.api[id].answers = [];
+      s.apiJson[id].state = QUESTION_ANSWERED_STATES.UNANSWERED;
+      s.apiJson[id].answers = [];
     },
   },
 });
 
 export const { answerQuestion, resetQuestion } = surveySlice.actions;
+
+export const getQuestionsForSelectedAppliance = applianceGroup => state => state.apiJson.filter(q =>q.group === applianceGroup) ;
+export const getSurveyStateSlice = state => state.apiJson;
 
 export default surveySlice.reducer;

@@ -16,11 +16,11 @@ function Survey() {
         <>
             <div style={{ "display": "flex", "margin": "1rem", "color": "white" }}>
                 <div style={{ "width": "70%", "height": "920px", "background": "black", "padding": "1rem" }}>
-                    See your home getting built
+                    <h3>See your home getting built</h3>
                     <SceneLoader sceneConfigs={SCENE_CONFIGS[SCENE_BASE_OBJECTS]} applianceConfigs={APPLIANCE_GROUPS}/>
                 </div>
                 <div style={{ flexGrow: 1, "background": "lightBlue", "padding": "1rem", overflow: "auto", maxHeight:"920px" }}>
-                    Answer questions to build your home
+                    <h3>Answer questions to build your home</h3>
                     <SurveyQuestionArea/>
                 </div>
             </div>
