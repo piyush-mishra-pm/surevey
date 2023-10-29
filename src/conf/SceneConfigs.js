@@ -28,7 +28,7 @@ export const SCENE_CONFIGS = {
         POSITION: [0, 0, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.6, 0.6, 0.6],
-        TEXT_POSITION: [0, 0, 0],
+        TEXT_POSITION: [3, 0, -3],
         COUNT: 1,
       },
       {
@@ -38,7 +38,7 @@ export const SCENE_CONFIGS = {
         POSITION: [0, 0, 0],
         ROTATION: [0, 0, 0],
         SCALE: [0.6, 0.6, 0.6],
-        TEXT_POSITION: [-10, -5, -5],
+        TEXT_POSITION: [-20, -4.5, -6],
         COUNT: 1,
       },
       {
@@ -58,7 +58,7 @@ export const SCENE_CONFIGS = {
         POSITION: [-0.2, 0, -1],
         ROTATION: [0, 0, 0],
         SCALE: [0.6, 0.6, 0.6],
-        TEXT_POSITION: [-7, -7, 6],
+        TEXT_POSITION: [-7, 5, 10],
       },
       {
         MODEL_NAME: "Refrigerator",
@@ -77,7 +77,7 @@ export const SCENE_CONFIGS = {
         POSITION: [0, 0.34, 0.1],
         ROTATION: [-0.01, 0, 0],
         SCALE: [0.5, 0.5, 0.5],
-        TEXT_POSITION: [0, 4, 0],
+        TEXT_POSITION: [-9, 2.5, 0],
         COUNT: 1,
       },
       {
