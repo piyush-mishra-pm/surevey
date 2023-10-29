@@ -5,6 +5,7 @@ import { getQuestionIndexById, getSelectedOption } from '../../helpers/surveyHel
 import _ from 'lodash';
 import { STATE_ANSWERED } from '../../CONSTANTS';
 import { answerQuestion } from '../../state/surveySlice';
+import { modifyAppView } from '../../state/sceneSlice';
 
 function SingleChoiceQuestion({ ques }) {
     const surveyState = useSelector(state=>state.survey.apiJson);
@@ -15,7 +16,8 @@ function SingleChoiceQuestion({ ques }) {
     
     const handleOptionChange = (e) => {
         const qIndex = getQuestionIndexById(ques.id, surveyState);
-        dispatch(answerQuestion({ qIndex ,state:STATE_ANSWERED, answers: [e.target.value]}))
+        dispatch(answerQuestion({ qIndex ,state:STATE_ANSWERED, answers: [e.target.value]}));
+        // dispatch(modifyAppView({ appGroupId:'EV',present: false, variant:'EV_RGB', text:99, emoji:";)" }));
     };
 
     return (
