@@ -5,7 +5,7 @@ function Home() {
     return (
         <div>
             <div>Home</div>
-            <Link className="positive ui button" to="/survey/RESI">Start Survey !</Link>
+            <Link className="positive ui button" to="/survey">Start Survey !</Link>
         </div>
     )
 }

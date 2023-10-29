@@ -18,7 +18,7 @@ export default function App() {
           <Route path="/choose-survey">
             <ChooseSurvey />
           </Route>
-          <Route path="/survey/:userType">
+          <Route path="/survey">
             <Survey />
           </Route>
           <Route path="/">

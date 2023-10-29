@@ -5,10 +5,9 @@ function Header() {
     return (
         <div className='ui top menu'>
             <div className='item'>
-                Logo
+                Bidgely
             </div>
-            <Link to="/" className='item'>Sure-vey</Link>
-            <Link to="/choose-survey" className='item'>Choose-Survey(DEV MODE)</Link>
+            <Link to="/" className='item'>The-Volt-Survey</Link>
         </div>
     )
 }
